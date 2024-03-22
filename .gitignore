@@ -1,5 +1,7 @@
 *.iml
 .gradle
+#idea不上传
+.idea
 /local.properties
 /.idea/caches
 /.idea/libraries
@@ -16,4 +18,5 @@ local.properties
 #测试类不上传
 /app/src/test
 /app/src/androidTest
+
 
