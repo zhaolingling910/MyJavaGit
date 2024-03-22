@@ -4,16 +4,17 @@ package com.example.myjavagit
 import android.content.Intent
 import android.view.View
 import com.example.myjavagit.databinding.MainOneLayoutBinding
+import com.example.myjavagit.databinding.MainTwoLayoutBinding
 
-class MainOneActivity : BaseActivity<MainOneLayoutBinding>(), View.OnClickListener {
+class MainTwoActivity : BaseActivity<MainTwoLayoutBinding>(), View.OnClickListener {
     override fun getLayoutResId(): Int {
-        return R.layout.main_one_layout
+        return R.layout.main_two_layout
     }
 
     override fun initView() {
         mViewDataBinding.text.text = "跳转到了第二个页面 哈哈哈"
         mViewDataBinding.button.setOnClickListener(this)
-        mViewDataBinding.buttonOne.setOnClickListener(this)
+
     }
 
     override fun initData() {
@@ -24,10 +25,6 @@ class MainOneActivity : BaseActivity<MainOneLayoutBinding>(), View.OnClickListen
         when (v?.id) {
             R.id.button -> {
                 finish()
-            }
-            R.id.buttonOne -> {
-                val intent = Intent(this, MainTwoActivity::class.java)
-                startActivity(intent)
             }
         }
     }

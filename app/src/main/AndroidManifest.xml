@@ -26,6 +26,10 @@
             android:name=".MainOneActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".MainTwoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light" />
 
     </application>
 
