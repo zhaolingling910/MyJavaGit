@@ -13,3 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+#测试类不上传
+/app/src/test
+/app/src/androidTest
+
